@@ -1,0 +1,170 @@
+.app__tit{
+  padding: 0.6rem 0 0.6rem 0;
+  margin: 3rem 0 ;
+  border-radius: 8px;
+  width: 100%;
+  background-color: white;
+  
+  @media screen and (max-width: 768px) {
+    width: 70%;
+    margin:2rem auto;
+    font-size: 20px;
+  }
+
+}
+
+.app__footer-form {
+  flex-direction: column;
+  margin: 1rem 2rem;
+
+  div {
+    width: 100%;
+
+    margin: 0.75rem 0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 0.95rem;
+      border: none;
+      border-radius: 7px;
+      background-color: white;
+      outline: none;
+    }
+
+    &:hover {
+      box-shadow: 0 0 15px #6e5dcf;
+    }
+
+     @media screen and (max-width: 768px) {
+    width: 70%;
+  }
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    margin: 1rem 0;
+  }
+}
+
+  button {
+    padding: 0.7rem 2rem;
+    border-radius: 10px;
+    border: none;
+    background-color:#6e5dcf;
+    font-weight: 500;
+    color: white;
+    outline: none;
+    margin: 0.8rem 0 0 0;
+
+    transition: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    cursor: pointer;
+
+    &:hover {
+      background-color: #a53afd;
+    }
+  }
+
+   .Google_btn{
+      margin-left: 1rem;
+       background-color:#ed5353;
+        &:hover {
+      background-color: #ff6a00;
+    }
+    }
+
+// .app__flex {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+.login_container{
+    width: 400px;
+    margin: auto;
+      @media screen and (max-width: 600px) {
+    width: auto;
+  }
+}
+
+.login_btns{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Create_acc_btn{
+  text-align: right;
+  margin:1.5rem 3rem 0 0;
+  cursor: pointer;
+  b{
+    margin-left: 0.5rem;
+    padding: 2px 5px;
+    background-color: rgb(219, 244, 255);
+    border-radius: 8px;
+   &:hover {
+    color: #2d08ff;
+   }
+  }
+}
+
+//=====================external css========================//
+
+.txt_field_Sign_up{
+  position: relative;
+  border-bottom: 2px solid #adadad;
+  margin: 30px 0;
+}
+.txt_field_Sign_up input{
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+}
+.txt_field_Sign_up label{
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: #adadad;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  transition: .5s;
+}
+.txt_field_Sign_up span::before{
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #0099ff;
+  transition: .5s;
+}
+.txt_field_Sign_up input:focus ~ label,
+.txt_field_Sign_up input:valid ~ label{
+  top: -5px;
+  color: #0099ff;
+}
+.txt_field_Sign_up input:focus ~ span::before,
+.txt_field_Sign_up input:valid ~ span::before{
+  width: 100%;
+}
+
+// .Sign_up_names{
+//   display: flex;
+//   justify-content: space-between;
+// }
+
+.Sign_up_block{
+   @media screen and (max-width: 768px) {
+    width: 70%;
+    margin: auto;
+  }  
+}

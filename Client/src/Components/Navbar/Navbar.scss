@@ -1,0 +1,71 @@
+.form_navigator{
+  height: 0%;
+  position: relative;
+  margin-bottom: 1rem;
+}
+ .form_navigator_icon{
+  position: absolute;
+  right: 6rem;
+  top: -40px;
+   svg{
+    font-size: 25px;
+    padding-left: 25px;
+    &:hover{
+     transform: scale(1.2);
+     cursor: pointer;
+    }
+
+    @media screen and (max-width: 700px) {
+       padding-left: 15px;
+    }
+   }
+   @media screen and (max-width: 700px) {
+      right: 5rem;
+    }
+    @media screen and (max-width: 500px) {
+      right: 4rem;
+    }
+
+    .fni_form{
+      color: rgb(0, 32, 136);
+    }
+
+    b{
+      position: absolute;
+      bottom: 8px;
+      padding-left: 5px;
+      cursor: pointer;
+    }
+ }
+
+.app__tittle{
+padding: 1rem 0 0.6rem 0;
+margin: 0;
+text-align: left;
+padding-left: 3rem;
+color: rgb(0, 144, 221);
+  
+   @media screen and (max-width: 700px) {
+  font-size: 20px;
+  padding-left: 2rem;
+  }
+}
+
+.form_navigator_name{
+  position: absolute;
+  right: 13rem;
+  top: -37px;  
+  h3{
+    margin: 0% !important;
+    display: inline;
+    color: rgb(13, 0, 255);
+  }
+ @media screen and (max-width: 700px) {
+      right: 10rem;
+  }
+  @media screen and (max-width: 500px) {
+    top: 0%;
+     right: 1rem;
+  }
+
+}
