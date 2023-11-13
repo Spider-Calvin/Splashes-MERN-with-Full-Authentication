@@ -26,6 +26,7 @@ mongoose
   .connect(process.env.CONNECTION_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
+    useCreateIndex: true,
   })
   .then(() =>
     app.listen(PORT, () =>
@@ -35,3 +36,5 @@ mongoose
   .catch((error) => console.log(`${error} what the fuck did not connect`));
 
   // mongoose.set("useFindAndModify", false);
+
+export default app;
