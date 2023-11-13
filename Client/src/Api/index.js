@@ -1,6 +1,7 @@
 import axios from 'axios' ;
-// const url = "https://spider-memories.herokuapp.com/po API
-const API = axios.create({ baseURL: "http://localhost:5001" });
+const url = "https://splashes-api.vercel.app/"
+// const url = "http://localhost:5001"
+const API = axios.create({ baseURL: url });
 
 API.interceptors.request.use((req) => {
   if (localStorage.getItem("profile")) {
